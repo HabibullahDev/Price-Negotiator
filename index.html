@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI OpenAI Chat</title>
+</head>
+<body>
+    <h1>FastAPI OpenAI Chat</h1>
+
+    <form action="/chat" method="post">
+        <label for="user_input">Your Message:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <div>
+        <strong>User:</strong> {{ user_input }}
+    </div>
+
+    <div>
+        <strong>Assistant:</strong> {{ model_response }}
+    </div>
+</body>
+</html>
